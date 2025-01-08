@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.yt-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.yt-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px black;
+}
+
+
+.yt-thumbnail {
+    position: relative;
+}
+
+.yt-thumbnail img {
+    width: 100%;
+    display: block;
+    border-radius: 6px 6px 0 0;
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 48px 1fr; 
+    padding: 15px;
+}
+
+.channel-profile img {
+    width: 36px;
+    border-radius: 50%;
+}
+
+.video-info {
+    padding-left: 10px;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: grey;
+}
+
+.channel-name,
+.video-starts {
+    font-size: 12px;
+    color: grey;
+    margin: 0;
+}
